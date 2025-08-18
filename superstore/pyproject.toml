@@ -1,0 +1,18 @@
+[project]
+name = "superstore"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "git-filter-repo>=2.47.0",
+    "kagglehub>=0.3.12",
+    "matplotlib>=3.10.5",
+    "numpy>=2.3.2",
+    "pandas>=2.3.1",
+    "plotly>=6.3.0",
+    "scikit-learn>=1.7.1",
+    "seaborn>=0.13.2",
+    "streamlit>=1.48.1",
+    "xgboost>=3.0.4",
+]

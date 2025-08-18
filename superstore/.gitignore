@@ -1,0 +1,58 @@
+# ---- uv ----
+.venv/
+.uv/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+*.nbconvert/
+
+# ---- Virtual Environments ----
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ---- Data Science Outputs ----
+# Model artifacts
+*.joblib
+*.pkl
+*.h5
+*.pt
+*.onnx
+
+# Datasets
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.parquet
+*.feather
+*.arrow
+*.jsonl
+*.zip
+*.tar
+*.gz
+
+# Large intermediate files
+*.log
+*.out
+*.tmp
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
