@@ -1,34 +1,33 @@
 
 # Superstore DS Project (Full Lifecycle)
 
-This starter kit helps you run **EDA**, build a **dashboard**, and train a **prediction model** on the Superstore dataset (10k+ rows).
+**EDA**,**Dashboard**, and training a **Prediction model** on the Classic Superstore dataset (10k rows approx).
 
-## How to use
+## How to use (using UV)
 
-1. Put your full CSV at: `data/superstore.csv`  
-   - If you don't have it yet, test with `data/superstore_sample.csv` (5 rows).
+1. Full CSV present at: `data/superstore.csv`  
 
 2. Create a virtual env and install requirements:
    ```bash
-   python -m venv .venv
-   .venv\Scripts\activate  # Windows
-   # source .venv/bin/activate  # macOS/Linux
-   pip install -r requirements.txt
+   uv venv
+   source .venv/bin/activate   # macOS/Linux
+   .venv\Scripts\activate      # Windows
+   uv pip install -r requirements.txt
    ```
 
 3. Run EDA (saves figures in `reports/`):
    ```bash
-   python notebooks/01_eda.py --csv data/superstore.csv  # or superstore_sample.csv
+   uv run notebooks/01_eda.py --csv data/superstore.csv
    ```
 
 4. Train models and evaluate (saves model + metrics):
    ```bash
-   python src/train_model.py --csv data/superstore.csv --target Profit
+   uv run src/train_model.py --csv data/superstore.csv --target Profit
    ```
 
 5. Launch the interactive dashboard:
    ```bash
-   streamlit run app/streamlit_app.py
+   uv run streamlit run app/streamlit_app.py
    ```
 
 ## Targets you can predict
@@ -43,5 +42,12 @@ This starter kit helps you run **EDA**, build a **dashboard**, and train a **pre
 - `requirements.txt`: Python dependencies
 
 ---
+## Dataset Info
+Superstore dataset by https://github.com/VivekChowdhury23
+Link to dataset : [https://github.com/VivekChowdhury23](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
-**Tip:** If your dates look like `11/8/2016`, they are month/day/year (US). The code handles this automatically.
+## Note :
+Models included are not tuned and may produce undesirable results.
+They serve as a boilerplate for further improvements.
+The dashboard may have bugs, as some parts were written with the help of AI and are not yet thoroughly tested.
+
